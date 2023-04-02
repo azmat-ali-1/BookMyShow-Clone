@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+   
+}
+html{
+    background-color: #F5F5F5;
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333545;
+}
+.navigation .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navigation .search{
+    width: 30em;
+    height: 40%;
+}
+.navigation img{
+    height: 50%;
+}
+.navigation .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    color: white;
+}
+.navigation .right button{
+    height: 30%;
+    border: none;
+    background-color: #F84464;
+    color: white;
+    border-radius: 2px;
+    font-size: 10px;
+    width: 7em;
+}
+.navigationBtmBdr{
+    background-color: #222539;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 52px;
+}
+.navigationBtmBdr a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.navigationBtmBdr .left,.navigationBtmBdr .right{
+    padding:10px 0;
+}
+.mainpart{
+    position: absolute;
+    display: none;
+    transition-duration: 2s;
+}
+
+.azmat:hover .mainpart{
+    right: 0;
+    top: 0;
+    display: inline-block;
+}
+main img{
+    width: 100%;
+}
+
+main{
+    margin: 1% 11%;
+}
+.mainpart{
+    
+    margin-left: 0%;
+    height: 100vh;
+    width: 25vw;
+    background-color: white;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.489);
+}
+
+.mainpart .one{
+    background-color: #2E3147;
+    height: 10%;
+}
+.mainpart h2{
+  color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 3% 5%;
+}
+.mainpart .two{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0px;
+    
+    padding: 5%;
+    box-shadow: 1px 2px 2px gray;
+    width: 90%;
+}
+.mainpart img{
+    width: 10%;
+    height: 10%;
+}
+.mainpart .two span,.mainpart button{
+    font-size: 9px;
+    font-weight: 600;
+    margin-right: 0px;
+}
+.mainpart button{
+    border: 1px solid #F84F6D;
+    border-radius: 5px;
+    color: #F84F6D;
+    background-color: white;
+    font-size: 8px;
+    padding: 5px;
+}
+.mainpart .three{
+    display: flex;
+    flex-direction: column;
+}
+.three .first{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.mainpart .three a{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    color: #484444;
+    border-bottom: 1px solid #484444;
+    margin-right: 5%;
+}
+/* nav end */
+
+
+
+
+/* section */
+
+.headersection{
+    background-color: #333545;
+}
+.bookingheader{
+    margin: 0 11%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.bookingheader h1{
+    font-size: 30px;
+    color: white;
+}
+.bookingheader span{
+    border: 1px solid rgba(128, 128, 128, 0.759);
+    color: rgba(128, 128, 128, 0.759);
+    padding: 2px;
+    border-radius:7px ;
+    font-size: 10px;
+    margin-right: 5px;
+}
+.headersection2{
+    background-color: white;
+}
+/* section end */
+/* section2 */
+.headersection2{
+    position: sticky;
+    top: 0;
+}
+.bookingheader2{
+    margin: 0 11%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bookingheader2 .leftpart{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.bookingheader2 .leftpart span{
+   color: #F84464;
+}
+.bookingheader2 .leftpart input{
+   border-radius: 7px;
+}
+.bookingheader2 .rightpart{
+    display: flex;
+    align-items: center;
+}
+.bookingheader2 .rightpart div{
+    display: flex;
+    align-items: center;
+}
+.bookingheader2 .rightpart div{
+    border-left: 1px solid black;
+    padding: 1em 5%;
+}
+.bookingheader2 .rightpart span{
+    font-size: 15px;
+    color: rgb(18, 235, 18);
+}
+/* section2 end */
+
+/* ticket section */
+/* ticket head */
+.tickethead{
+    display: flex;
+    justify-content: flex-end;
+}
+.tickethead span{
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.tickethead .h-1{
+    color: rgb(13, 211, 13);
+    font-weight: 800;
+}
+.tickethead .h-2{
+    color: red;
+    font-weight: 800;
+}
+
+/* ticket head end*/
+.ticketsection{
+    margin: 1% 11%;
+    background-color: white;
+    height: 70vh;
+}
+.section-one-ticket{
+    display: flex;
+    gap: 5%;
+    align-items: flex-start;
+    padding: 1% 1%;
+    border-top: 1px solid black;
+    
+}
+
+.section-one-ticket .t-2 h3{
+    font-size: 10px;
+}
+.section-one-ticket .t-2 span{
+    font-size: 10px
+}
+.section-one-ticket .t-2-green{
+    color: #8DD4B8;
+}
+.section-one-ticket .t-2-orange{
+    color: #FFAF42;
+}
+.section-one-ticket .t-3 span{
+    font-size: 10px;
+    color: #9b9595;
+    font-weight: 500;
+}
+.section-one-ticket .t-4{
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 0.5% 1.5%;
+    color: green !important;
+}
+.section-one-ticket a{
+    text-decoration: none;
+}
+.section-one-ticket .t-1 a:hover span{
+    color: red;
+}
+.section-one-ticket .t-2 a:hover h3{
+    text-decoration: underline;
+} 
+/* ticket section end */
+
+
+footer{
+    background-color: #2E3147;
+}
+.footer-one{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 10%;
+    align-items: center;
+    padding: 1% 0%;
+}
+.footer-one .one-one{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:5px;
+    align-items: center;
+}
+footer button{
+    padding: 6px;
+    color: white;
+    background-color: #EC5E71;
+    border: none;
+    border-radius: 5px;
+}
+.footer-two-one{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0% 10%;
+    padding: 1% 0%;
+   
+}
+.footer-two-one a{
+    text-decoration: none;
+    color: #33698D;
+}
+.footer-two-one a:hover{
+    color: white;
+}
+.footer-two{
+    background-color: #404043;
+}
+
+.footer-third{
+    background-color: #333338;
+    padding-top: 3%;
+}
+.footer-third .fth-two .fth-tw-tw{
+    text-align: center;
+    font-size: 10px;
+    padding: 3% 5%;
+    color: #666666;
+}
+.footer-third .fth-two .fth-tw-on{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    padding-top: 5%;
+}
+.footer-third .fth-two .fth-tw-on img{
+    width: 20px;
+    border-radius: 10px;
+   
+    border: 7px solid #333338;
+}
+.footer-third .fth-two .fth-tw-on img:hover{
+    transform: scale(1.2);
+}
