@@ -8,18 +8,25 @@
 html{
     background-color: #F5F5F5;
 }
+/* nav  star*/
+html{
+    background-color: #F5F5F5;
+}
+nav{
+    background-color: #333545;
+}
 .navigation{
     display: flex;
-    justify-content: space-evenly;
-    background-color: #333545;
+    margin: 0% 11%;
 }
 .navigation .left{
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-grow: 1;
 }
 .navigation .search{
-    width: 30em;
+    width: 60%;
     height: 40%;
 }
 .navigation img{
@@ -133,10 +140,25 @@ main{
     justify-content: space-between;
     align-content: center;
     text-decoration: none;
-    color: #484444;
+    color: #484444 !important;
     border-bottom: 1px solid #484444;
     margin-right: 5%;
 }
+
+
+@media(max-width:672px){
+
+    .right>div span,.right button{
+        display: none;
+    }
+    .navigationBtmBdr{
+        display: none;
+    }
+    .mainpart{
+        width: 60vw;
+    }
+}
+
 /* nav end */
 /* footer */
 
@@ -206,6 +228,27 @@ footer button{
 .footer-third .fth-two .fth-tw-on img:hover{
     transform: scale(1.2);
 }
+.logo222{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo222::after{
+content: "";
+width: 40%;
+height: 2px;
+background-color: grey;
+top: 50px;
+}
+.logo222::before{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: grey;
+    top: 50px;
+    }
+
 /* footer end */
 /* section */
 .video-gallery{

@@ -8,18 +8,26 @@
 html{
     background-color: #F5F5F5;
 }
+
+/* nav  star*/
+html{
+    background-color: #F5F5F5;
+}
+nav{
+    background-color: #333545;
+}
 .navigation{
     display: flex;
-    justify-content: space-evenly;
-    background-color: #333545;
+    margin: 0% 11%;
 }
 .navigation .left{
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-grow: 1;
 }
 .navigation .search{
-    width: 30em;
+    width: 60%;
     height: 40%;
 }
 .navigation img{
@@ -133,10 +141,25 @@ main{
     justify-content: space-between;
     align-content: center;
     text-decoration: none;
-    color: #484444;
+    color: #484444 !important;
     border-bottom: 1px solid #484444;
     margin-right: 5%;
 }
+
+
+@media(max-width:672px){
+
+    .right>div span,.right button{
+        display: none;
+    }
+    .navigationBtmBdr{
+        display: none;
+    }
+    .mainpart{
+        width: 60vw;
+    }
+}
+
 /* nav end */
 
 
@@ -275,7 +298,48 @@ main{
 }
 .section-one-ticket .t-2 a:hover h3{
     text-decoration: underline;
-} 
+}
+
+.t-4{
+    position: relative;
+}
+.floatingDetail{
+    width: 25vw;
+    height: 8vw;
+    position: absolute;
+    box-shadow: 1px 8px 20px gray;
+    background-color: white;
+    padding: 10px;
+   top:-120px;
+   left: -90px;
+    z-index: 1;
+    visibility: hidden;
+}
+.fd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.floatingDetail h3,.floatingDetail h4,.floatingDetail p{
+    text-align: center;
+    color: black;
+    font-size: 9px;
+}
+.triangle{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 10px solid transparent;
+   border-bottom: 0;
+   border-top: 10px solid white;
+    top:100%;
+    left: 40%;
+}
+.section-one-ticket .t-4:hover .floatingDetail{
+    visibility: visible;
+}
 /* ticket section end */
 
 
@@ -347,3 +411,23 @@ footer button{
 .footer-third .fth-two .fth-tw-on img:hover{
     transform: scale(1.2);
 }
+.logo222{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo222::after{
+content: "";
+width: 40%;
+height: 2px;
+background-color: grey;
+top: 50px;
+}
+.logo222::before{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: grey;
+    top: 50px;
+    }
