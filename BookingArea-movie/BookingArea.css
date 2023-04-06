@@ -8,11 +8,120 @@
 html{
     background-color: #F5F5F5;
 }
+/*symbol*/
+
+.azmat-circle-container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 100px rgba(24, 24, 214, 0.53);
+    transition-duration:5s;
+}
+.circle{
+    /* position: absolute; */
+    background-color: grey;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight:800;
+}
+.hexa-1,.hexa-2,.hexa-3,.hexa-4{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    /* border: 1px solid; */
+    position: absolute;
+    border-bottom: 1px solid blue;
+    border-top:1px solid red ;
+    border-left:1px solid white;
+    border-right: 1px solid yellow;
+}
+.hexa-1{
+    transform: skewY(45deg);
+    animation: hexa-1-roll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.hexa-2{
+    transform: skewY(-45deg);
+    animation: hexa-2-roll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.hexa-3{
+    transform: skewX(45deg);
+    animation: hexa-3-roll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.hexa-4{
+    transform: skewX(-45deg);
+    animation: hexa-4-roll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes hexa-1-roll{
+
+    100%{
+        transform: skewY(45deg) rotate(360deg);
+
+    }
+}
+@keyframes hexa-2-roll{
+
+    100%{
+        transform: skewY(-45deg) rotate(360deg);
+
+    }
+}
+@keyframes hexa-3-roll{
+
+    100%{
+        transform: skewX(45deg) rotate(360deg);
+
+    }
+}
+@keyframes hexa-4-roll{
+
+    100%{
+        transform: skewX(-45deg) rotate(360deg);
+
+    }
+}
+.azmat-circle-container:hover{
+    transform: scale(2) rotateY(360deg);
+}
+
+.Symbol{
+position:fixed;
+bottom:2%;
+right:2%;
+
+}
+
+/*ended*/
 
 /* nav  star*/
 html{
     background-color: #F5F5F5;
 }
+
 nav{
     background-color: #333545;
 }

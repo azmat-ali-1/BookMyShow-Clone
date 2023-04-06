@@ -1,0 +1,138 @@
+
+
+
+
+html{
+    background-color: #F5F5F5;
+}
+/* nav end */
+
+.movie img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.movie h3,.movie p{
+    margin-left: 2%;
+}
+.movie h3{
+    font-weight: bold;
+}
+.moviecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.moviesection{
+    margin: 5% 11%;
+}
+.moviesection h2{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 3%;
+}
+.poster{
+    margin: 1% 11%;
+}
+.poster img{
+    width: 100%;
+}
+.suggest{
+   
+    height: auto;
+    background-color: #2B3149;
+}
+.suggest .header{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin: 5% 11%;
+    color: white;
+    font-weight: 400;
+    padding-top: 3%;
+    word-break: break-word;
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 1.17;
+}
+
+.suggest{
+    color: white;
+}
+.moviecontainer img{
+    transition-duration: 1s;
+}
+.moviecontainer img:hover{
+    transform: scale(1.2);
+}
+.events{
+    margin: 5% 11%;
+}
+.events img{
+    width: 200px;
+    margin-left: 1.5%;
+    border-radius: 10px;
+   
+}
+.events div{
+    margin-top: 3%;
+}
+.events h2{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+}
+.Trending{
+    background-color: #F5F5F5;
+    margin: 5% 11%;
+}
+.Trending .inside .one div,.Trending .inside .two div{
+    background-color: white;
+}
+.Trending h2{
+    word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin-bottom: 1%;
+}
+.Trending h4{
+    color: #F84464;
+}
+.Trending .inside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    height: auto;
+    gap: 2%;
+    justify-content: space-between;
+}
+.Trending .one,.Trending .two{
+    display: flex;
+    gap: 2%;
+}
+.one div,.two div{
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 2%;
+    border-radius: 2px;
+}
+
+
+
+
+
+
