@@ -1,0 +1,185 @@
+
+html{
+    background-color: #F5F5F5;
+}
+
+
+
+
+
+/* section */
+
+.headersection{
+    background-color: #333545;
+}
+.bookingheader{
+    margin: 0 11%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.bookingheader h1{
+    font-size: 30px;
+    color: white;
+}
+.bookingheader span{
+    border: 1px solid rgba(128, 128, 128, 0.759);
+    color: rgba(128, 128, 128, 0.759);
+    padding: 2px;
+    border-radius:7px ;
+    font-size: 10px;
+    margin-right: 5px;
+}
+.headersection2{
+    background-color: white;
+}
+/* section end */
+/* section2 */
+.headersection2{
+    position: sticky;
+    top: 0;
+}
+.bookingheader2{
+    margin: 0 11%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bookingheader2 .leftpart{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+.bookingheader2 .leftpart span{
+   color: #F84464;
+}
+.bookingheader2 .leftpart input{
+   border-radius: 7px;
+}
+.bookingheader2 .rightpart{
+    display: flex;
+    align-items: center;
+}
+.bookingheader2 .rightpart div{
+    display: flex;
+    align-items: center;
+}
+.bookingheader2 .rightpart div{
+    border-left: 1px solid black;
+    padding: 1em 5%;
+}
+.bookingheader2 .rightpart span{
+    font-size: 15px;
+    color: rgb(18, 235, 18);
+}
+/* section2 end */
+
+/* ticket section */
+/* ticket head */
+.tickethead{
+    display: flex;
+    justify-content: flex-end;
+}
+.tickethead span{
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.tickethead .h-1{
+    color: rgb(13, 211, 13);
+    font-weight: 800;
+}
+.tickethead .h-2{
+    color: red;
+    font-weight: 800;
+}
+
+/* ticket head end*/
+.ticketsection{
+    margin: 1% 11%;
+    background-color: white;
+    height: 70vh;
+}
+.section-one-ticket{
+    display: flex;
+    gap: 5%;
+    align-items: flex-start;
+    padding: 1% 1%;
+    border-top: 1px solid black;
+    
+}
+
+.section-one-ticket .t-2 h3{
+    font-size: 10px;
+}
+.section-one-ticket .t-2 span{
+    font-size: 10px
+}
+.section-one-ticket .t-2-green{
+    color: #8DD4B8;
+}
+.section-one-ticket .t-2-orange{
+    color: #FFAF42;
+}
+.section-one-ticket .t-3 span{
+    font-size: 10px;
+    color: #9b9595;
+    font-weight: 500;
+}
+.section-one-ticket .t-4{
+    border: 1px solid green;
+    border-radius: 4px;
+    padding: 0.5% 1.5%;
+    color: green !important;
+}
+.section-one-ticket a{
+    text-decoration: none;
+}
+.section-one-ticket .t-1 a:hover span{
+    color: red;
+}
+.section-one-ticket .t-2 a:hover h3{
+    text-decoration: underline;
+}
+
+.t-4{
+    position: relative;
+}
+.floatingDetail{
+    width: 25vw;
+    height: 8vw;
+    position: absolute;
+    box-shadow: 1px 8px 20px gray;
+    background-color: white;
+    padding: 10px;
+    bottom:130%;
+    left:-110%;
+    z-index: 1;
+    visibility: hidden;
+}
+.fd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.floatingDetail h3,.floatingDetail h4,.floatingDetail p{
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+.triangle{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 10px solid transparent;
+   border-bottom: 0;
+   border-top: 10px solid white;
+    top:100%;
+    left: 40%;
+}
+.section-one-ticket .t-4:hover .floatingDetail{
+    visibility: visible;
+}
+/* ticket section end */

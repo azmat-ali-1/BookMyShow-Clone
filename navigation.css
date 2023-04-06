@@ -1,0 +1,150 @@
+
+nav{
+    background-color: #333545;
+
+}
+.navigation{
+    display: flex;
+    margin: 0% 11%;
+}
+.navigation .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+.navigation .search{
+    width: 60%;
+    height: 40%;
+}
+.navigation img{
+    height: 50%;
+    padding:1% 0;
+}
+.navigation .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+}
+.navigation .right button{
+    height: 30%;
+    border: none;
+    background-color: #F84464;
+    color: white;
+    border-radius: 2px;
+    font-size: 10px;
+    width: 7em;
+}
+.navigationBtmBdr{
+    background-color: #222539;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 52px;
+}
+.navigationBtmBdr a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.navigationBtmBdr .left,.navigationBtmBdr .right{
+    padding:10px 0;
+}
+.mainpart{
+    position: absolute;
+    display: none;
+    transition-duration: 2s;
+    z-index: 1;
+}
+
+.azmat:hover .mainpart{
+    right: 0;
+    top: 0;
+    display: inline-block;
+}
+main img{
+    width: 100%;
+}
+
+main{
+    margin: 1% 11%;
+}
+.mainpart{
+    
+    margin-left: 0%;
+    height: 100vh;
+    width: 25vw;
+    background-color: white;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.489);
+}
+
+.mainpart .one{
+    background-color: #2E3147;
+    height: 10%;
+}
+.mainpart h2{
+  color: white;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 3% 5%;
+}
+.mainpart .two{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0px;
+    
+    padding: 5%;
+    box-shadow: 1px 2px 2px gray;
+    width: 90%;
+}
+.mainpart img{
+    width: 10%;
+    height: 10%;
+}
+.mainpart .two span,.mainpart button{
+    font-size: 9px;
+    font-weight: 600;
+    margin-right: 0px;
+}
+.mainpart button{
+    border: 1px solid #F84F6D;
+    border-radius: 5px;
+    color: #F84F6D;
+    background-color: white;
+    font-size: 8px;
+    padding: 5px;
+}
+.mainpart .three{
+    display: flex;
+    flex-direction: column;
+}
+.three .first{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.mainpart .three a{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-decoration: none;
+    color: #484444 !important;
+    border-bottom: 1px solid #484444;
+    margin-right: 5%;
+}
+
+
+@media(max-width:672px){
+
+    .right>div span,.right button{
+        display: none;
+    }
+    .navigationBtmBdr{
+        display: none;
+    }
+    .mainpart{
+        width: 60vw;
+    }
+}
