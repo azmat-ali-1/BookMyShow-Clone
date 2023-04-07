@@ -1,5 +1,7 @@
 # BookMyShow-Clone
 
+index :-  BookMyShow.html
+
 I would describe this project as a web development project that involved creating a clone of 
 the BookMyShow website using HTML and CSS. The goal of the project was to practice and improve 
 skills in front-end web development, including website structuring, content creation, and styling.
